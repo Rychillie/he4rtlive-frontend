@@ -25,8 +25,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: -webkit-fill-available;
+  min-height: 100vh;
   max-height: 100vh;
+  min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
   margin: 0;
   padding: 0;
   overflow: hidden;
