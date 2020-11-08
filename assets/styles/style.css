@@ -159,10 +159,16 @@ html {
 }
 
 h1 {
-  font-size: 7em;
+  font-size: 3em;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: #fff;
+}
+
+@media screen and (min-width: 720px) {
+  h1 {
+    font-size: 7em;
+  }
 }
 
 article {
@@ -175,6 +181,7 @@ article {
           align-items: center;
   z-index: 0;
   width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 1280px) {
