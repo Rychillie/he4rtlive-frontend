@@ -30,6 +30,11 @@ ul {
   padding: 0;
   overflow: hidden;
   list-style-type: none;
+  flex-direction: column;
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: unset;
+  }
 }
 
 li {
@@ -88,12 +93,16 @@ html {
   align-items: center;
   background-color: #fff;
   height: 10vh;
-  width: 60vw;
+  width: 100vw;
   background: linear-gradient(to right, #222221 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease;
   z-index: 99;
+
+  @media screen and (min-width: 1280px) {
+    width: 60vw;
+  }
 
   h4 {
     text-decoration-color: #fff;
@@ -128,13 +137,21 @@ article {
   padding: 10vh;
   align-items: center;
   z-index: 0;
+  width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    width: fit-content;
+  }
 }
 
 .min {
   font-size: 0.4em;
   transition: all 0.25s 0.1s ease;
-  transform: rotate(-90deg);
   white-space: nowrap;
+
+  @media screen and (min-width: 1280px) {
+    transform: rotate(-90deg);
+  }
 }
 
 .max {
@@ -175,6 +192,19 @@ body {
           h2 {
             color: #fff;
             align-self: flex-end;
+            font-size: 1.2rem;
+
+            @media screen and (min-width: 720px) {
+              font-size: 1.4rem;
+            }
+
+            @media screen and (min-width: 960px) {
+              font-size: 1.6rem;
+            }
+
+            @media screen and (min-width: 1280px) {
+              font-size: 2rem;
+            }
           }
         }
       }
